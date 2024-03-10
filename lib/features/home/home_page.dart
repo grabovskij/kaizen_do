@@ -156,10 +156,12 @@ class _MyHomePageState extends State<MyHomePage> {
                           Navigator.of(context).pop();
                         }
 
-                        Navigator.of(context).pop(CreateTodo(
-                          title: controller.text,
-                          done: false,
-                        ));
+                        Navigator.of(context).pop(
+                          CreateTodo(
+                            title: controller.text,
+                            done: false,
+                          ),
+                        );
                       },
                       child: const Text('Сохранить'),
                     ),
